@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="images/COINCOIN 0.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <img src="images/7.png" alt="">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="buy.html">Buy</a>
+                <a href="sell.html">Sell</a>
+                <a href="contact.html">Get In Touch</a>
+            </div>
+            <div class="reg">
+                <a class="reg-link" href="login.html" target="_blank"><button class="reg-btn">Log In</button></a>
+            </div>
+        </div>
+
+        <div id="signup-container">
+            <div class="header-wrapper">
+                <img src="../images/undraw_Access_account_re_8spm.svg" alt="">
+                <h2>Sign Up</h2>
+            </div>
+            <form method="post" id="form" action="#">
+                  <br/>
+                  <input type="text" name="first name" id="firstName" placeholder="First Name" required autofocus>
+                  <br/><br/>
+                  <input type="text" name="last name" id="lastName" placeholder="Last Name" required autofocus>
+                  <br/><br/>
+                  <input type="text" name="username" id="username" placeholder="Username" required autofocus>
+                  
+                  <br/><br/>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required> 
+                        <span id="text"></span>
+                    </div>
+                  <br/><br/>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <ul class="helper-text">
+                            <h3>*Password</h3>
+                            <li class="length">must be at least 8 characters long.</li>
+                            <li class="lowercase">must contain a lowercase letter.</li>
+                            <li class="uppercase">must contain an uppercase letter.</li>
+                            <li class="special">must contain a number or special character.</li>
+                        </ul>
+                    </div>
+                  <br/><br/>
+                  <!--<input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+                  <br/> <br/> <br/>-->
+                  <input type="submit" value="Submit">
+            </form>
+         </div>
+    </div>
+    <div class="copyright">
+        <p>&#169;2020 Coinaskglobal. All rights reserved.</p>
+    </div>
+<script src="signup.js"></script>
+</body>
+</html>

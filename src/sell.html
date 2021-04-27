@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Coins</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <p>BuddyCoin</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="hover">Home</a>
+                <a href="market.html" class="hover">Market</a>
+                <a href="buy.html" class="hover">Buy</a>
+                <a href="sell.html" class="hover">Sell</a>
+                <a href="contact.html" class="hover">Get In Touch</a>
+            </div>
+            <div class="reg">
+                <a class="reg-link" href="login.html" target="_blank"><button class="reg-btn">Log In</button></a>
+            </div>
+        </div>
+
+        <div class="bill-board"></div>
+
+        <div class="coin-container">
+         <section id="wrapper">
+             <div class="content">
+                <!-- Tab links -->
+                <div class="tabs">
+                   <button class="tablinks active" data-currency="Bitcoin"><p data-title="Bitcoin">Bitcoin</p></button>
+                   <button class="tablinks" data-currency="Ethereum"><p data-title="Ethereum">Ethereum</p></button>
+                   <button class="tablinks" data-currency="Tron"><p data-title="Tron">Tron</p></button>
+                   <button class="tablinks" data-currency="Tether"><p data-title="Tether">Tether</p></button>
+                </div>
+          
+                <!-- Tab content -->
+                <div class="wrapper_tabcontent">
+                   <div id="Bitcoin" class="tabcontent active">
+                      <h3>Bitcoin</h3>
+                      <div class="wallet-details">
+                        <div class="wallet-symbol">
+                           <img src="../images/bitcoin.png" alt="" class="wallet-logo">
+                           <h2 class="list-heading">BTC wallet ID</h2>
+                        </div>
+                        <div class="wallet-btn">
+                            <button class="btn" data-clipboard-text="0000000000000000000000000">Copy</button>
+                        </div>
+                    </div>
+                      <p id="market-rate"></p>
+                      <p class="para-2">@ &#8358;500/USD Value</p>
+                      <p class="para-3">Please enter the amount you want in BTC in the space for btc OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in BTC, USD or Naira.</p>
+                      <div class="input-flex">
+                          <div>
+                             <input type="text" placeholder="Amount in BTC" value="" class="form-control">
+                             <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                          </div>
+                      </div>
+                      <div>
+                         <input type="text" placeholder="Naira Value" value="" class="form-control">
+                      </div>
+                      
+                   </div>
+          
+                   <div id="Ethereum" class="tabcontent">
+                      <h3>Ethereum</h3>
+                      <div class="wallet-details">
+                        <div class="wallet-symbol">
+                            <img src="../images/ethereum.png" alt="" class="wallet-logo">
+                            <h2 class="list-heading">ETC wallet ID</h2>
+                        </div>
+                        <div class="wallet-btn">
+                            <button class="btn" data-clipboard-text="00000000000000000000000000000000">Copy</button>
+                        </div>
+                    </div>
+                    <p id="market-rate2"></p>
+                      <p class="para-2">@ &#8358;500/USD Value</p>
+                      <p class="para-3">Please enter the amount you want in ETH in the space for eth OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in ETH, USD or Naira.</p>
+                      <div class="input-flex">
+                          <div>
+                             <input type="text" placeholder="Amount in ETH" value="" class="form-control">
+                             <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                          </div>
+                      </div>
+                      <div>
+                         <input type="text" placeholder="Naira Value" value="" class="form-control">
+                      </div>
+                      
+                   </div>
+          
+                   <div id="Tron" class="tabcontent">
+                      <h3>Tron</h3>
+                      <div class="wallet-details">
+                        <div class="wallet-symbol">
+                            <img src="../images/tron.png" alt="" class="wallet-logo">
+                            <h2 class="list-heading">TRX wallet ID</h2>
+                        </div>
+                        <div class="wallet-btn">
+                            <button class="btn" data-clipboard-text="0000000000000000000000000000000">Copy</button>
+                        </div>
+                      </div>
+                      <p id="market-rate3"></p>
+                      <p class="para-2">@ &#8358;500/USD Value</p>
+                      <p class="para-3">Please enter the amount you want in TRX in the space for trx OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in TRX, USD or Naira.</p>
+                      <div class="input-flex">
+                          <div>
+                             <input type="text" placeholder="Amount in TRX" value="" class="form-control">
+                             <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                          </div>
+                      </div>
+                      <div>
+                         <input type="text" placeholder="Naira Value" value="" class="form-control">
+                      </div>
+                   </div>
+          
+                   <div id="Tether" class="tabcontent">
+                    <h3>Tether</h3>
+                    <div class="wallet-details">
+                      <div class="wallet-symbol">
+                          <img src="../images/tether.png" alt="" class="wallet-logo">
+                          <h2 class="list-heading">USDT wallet ID</h2>
+                      </div>
+                      <div class="wallet-btn">
+                          <button class="btn" data-clipboard-text="0000000000000000000000000000000">Copy</button>
+                      </div>
+                    </div>
+                    <p id="market-rate4"></p>
+                    <p class="para-2">@ &#8358;500/USD Value</p>
+                    <p class="para-3">Please enter the amount you want in USDT in the space for usdt OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in TRX, USD or Naira.</p>
+                    <div class="input-flex">
+                        <div>
+                           <input type="text" placeholder="Amount in USDT" value="" class="form-control">
+                           <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                       <input type="text" placeholder="Naira Value" value="" class="form-control">
+                    </div>
+                </div>
+                <a href="authenticate-buy.html"><button class="btn3" type="button">Sell</button></a>
+             </div>
+          </section>
+     </div>
+   </div>
+    <script src="../js/buy-sell.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script type="text/javascript">
+    new ClipboardJS('.btn');
+</script>
+</body>
+</html>

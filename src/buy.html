@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Crypto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <p>BuddyCoin</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="hover">Home</a>
+                <a href="market.html" class="hover">Market</a>
+                <a href="buy.html" class="hover">Buy</a>
+                <a href="sell.html" class="hover">Sell</a>
+                <a href="contact.html" class="hover">Get In Touch</a>
+            </div>
+            <div class="reg">
+                <a class="reg-link" href="login.html" target="_blank"><button class="reg-btn">Log In</button></a>
+            </div>
+        </div>
+
+        <div class="bill-board"></div>
+
+        <div class="coin-container">
+            <section id="wrapper">
+                <div class="content">
+                   <!-- Tab links -->
+                   <div class="tabs">
+                      <button class="tablinks active" data-currency="Bitcoin"><p data-title="Bitcoin">Bitcoin</p></button>
+                      <button class="tablinks" data-currency="Ethereum"><p data-title="Ethereum">Ethereum</p></button>
+                      <button class="tablinks" data-currency="Tron"><p data-title="Tron">Tron</p></button>
+                      <button class="tablinks" data-currency="Tether"><p data-title="Tether">Tether</p></button>
+                   </div>
+             
+                   <!-- Tab content -->
+                   <div class="wrapper_tabcontent">
+                      <div id="Bitcoin" class="tabcontent active">
+                         <h3>Bitcoin</h3>
+                        <p id="market-rate"></p>
+                        <p class="para-2">@ &#8358;500/USD Value</p>
+                        <p class="para-3">Please enter the amount you want in BTC in the space for btc OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in BTC, USD or Naira.</p>
+                         <form class="form1">
+                           <div class="input-flex">
+                              <div>
+                                 <input type="text" placeholder="Amount in BTC" value="" class="form-control">
+                                 <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                              </div>
+                           </div>
+                          <div>
+                           <input type="text" placeholder="Naira Value" value="" class="form-control">
+                          </div>
+                           <div>
+                              <input type="text" placeholder="Your BTC Address" value="" class="form-controls">
+                           </div>
+                           <div>
+                              <input type="text" placeholder="Your BTC Address AGAIN" value="" class="form-controls">
+                           </div>
+                           <div>
+                              <select id="banks" name="banks" class="form-control">
+                                <option value="">Select a bank</option>
+                                <option value="Access Bank Nig. Plc">Access Bank Nig. Plc</option>
+                                <option value="Ecobank Nigeria Plc">Ecobank Nigeria Plc</option>
+                                <option value="FCMB Plc">FCMB Plc</option>
+                                <option value="Fidelity Bank Plc">Fidelity Bank Plc</option>
+                                <option value="First Bank of Nigeria Plc">First Bank of Nigeria Plc</option>
+                                <option value="GTB Plc">GTB Plc</option>
+                                <option value="Heritage Banking Company Ltd.">Heritage Banking Company Ltd.</option>
+                                <option value="KeyStone Bank Plc">KeyStone Bank Plc</option>
+                                <option value="Polaris Bank Ltd.">Polaris Bank Ltd.</option>
+                                <option value="Providus Bank Ltd.">Providus Bank Ltd.</option>
+                                <option value="Stanbic - IBTC Bank Plc">Stanbic - IBTC Bank Plc</option>
+                                <option value="Standard Chartered Bank Plc">Standard Chartered Bank Plc</option>
+                                <option value="Sterling Bank Plc">Sterling Bank Plc</option>
+                                <option value="Union Bank of Nigeria Plc">Union Bank of Nigeria Plc</option>
+                                <option value="United Bank for Africa Plc">United Bank for Africa Plc</option>
+                                <option value="Unity Bank Plc">Unity Bank Plc</option>
+                                <option value="Wema Bank Plc">Wema Bank Plc</option>
+                                <option value="Zenith Bank Plc">Zenith Bank Plc</option>
+                              </select>
+                            </div> 
+                       </form>
+                      </div>
+             
+                      <div id="Ethereum" class="tabcontent">
+                         <h3>Ethereum</h3>
+                        <p id="market-rate2"></p>
+                        <p class="para-2">@ &#8358;500/USD Value</p>
+                         <p class="para-3">Please enter the amount you want in ETH in the space for eth OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in ETH, USD or Naira.</p>
+                         <div class="input-flex">
+                             <div>
+                                <input type="text" placeholder="Amount in ETH" value="" class="form-control">
+                                <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                             </div>
+                         </div>
+                         <div>
+                            <input type="text" placeholder="Naira Value" value="" class="form-control">
+                         </div>
+                         <div>
+                            <input type="text" placeholder="Your ETH Address" value="" class="form-controls">
+                         </div>
+                         <div>
+                            <input type="text" placeholder="Your ETH Address AGAIN" value="" class="form-controls">
+                         </div>
+                         <div>
+                            <select id="banks" name="banks" class="form-control">
+                              <option value="">Choose a bank</option>
+                              <option value="Access Bank Nig. Plc">Access Bank Nig. Plc</option>
+                              <option value="Ecobank Nigeria Plc">Ecobank Nigeria Plc</option>
+                              <option value="FCMB Plc">FCMB Plc</option>
+                              <option value="Fidelity Bank Plc">Fidelity Bank Plc</option>
+                              <option value="First Bank of Nigeria Plc">First Bank of Nigeria Plc</option>
+                              <option value="GTB Plc">GTB Plc</option>
+                              <option value="Heritage Banking Company Ltd.">Heritage Banking Company Ltd.</option>
+                              <option value="KeyStone Bank Plc">KeyStone Bank Plc</option>
+                              <option value="Polaris Bank Ltd.">Polaris Bank Ltd.</option>
+                              <option value="Providus Bank Ltd.">Providus Bank Ltd.</option>
+                              <option value="Stanbic - IBTC Bank Plc">Stanbic - IBTC Bank Plc</option>
+                              <option value="Standard Chartered Bank Plc">Standard Chartered Bank Plc</option>
+                              <option value="Sterling Bank Plc">Sterling Bank Plc</option>
+                              <option value="Union Bank of Nigeria Plc">Union Bank of Nigeria Plc</option>
+                              <option value="United Bank for Africa Plc">United Bank for Africa Plc</option>
+                              <option value="Unity Bank Plc">Unity Bank Plc</option>
+                              <option value="Wema Bank Plc">Wema Bank Plc</option>
+                              <option value="Zenith Bank Plc">Zenith Bank Plc</option>
+                            </select>
+                          </div> 
+                      </div>
+             
+                      <div id="Tron" class="tabcontent">
+                         <h3>Tron</h3>
+                        <p id="market-rate3"></p>
+                        <p class="para-2">@ &#8358;500/USD Value</p>
+                         <p class="para-3">Please enter the amount you want in TRX in the space for trx OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in TRX, USD or Naira.</p>
+                         <div class="input-flex">
+                             <div>
+                                <input type="text" placeholder="Amount in TRX" value="" class="form-control">
+                                <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                             </div>
+                         </div>
+                         <div>
+                            <input type="text" placeholder="Naira Value" value="" class="form-control">
+                         </div>
+                         <div>
+                            <input type="text" placeholder="Your TRX Address" value="" class="form-controls">
+                         </div>
+                         <div>
+                            <input type="text" placeholder="Your TRX Address AGAIN" value="" class="form-controls">
+                         </div>
+                         <div>
+                            <select id="banks" name="banks" class="form-control">
+                              <option value="">Choose a bank</option>
+                              <option value="Access Bank Nig. Plc">Access Bank Nig. Plc</option>
+                              <option value="Ecobank Nigeria Plc">Ecobank Nigeria Plc</option>
+                              <option value="FCMB Plc">FCMB Plc</option>
+                              <option value="Fidelity Bank Plc">Fidelity Bank Plc</option>
+                              <option value="First Bank of Nigeria Plc">First Bank of Nigeria Plc</option>
+                              <option value="GTB Plc">GTB Plc</option>
+                              <option value="Heritage Banking Company Ltd.">Heritage Banking Company Ltd.</option>
+                              <option value="KeyStone Bank Plc">KeyStone Bank Plc</option>
+                              <option value="Polaris Bank Ltd.">Polaris Bank Ltd.</option>
+                              <option value="Providus Bank Ltd.">Providus Bank Ltd.</option>
+                              <option value="Stanbic - IBTC Bank Plc">Stanbic - IBTC Bank Plc</option>
+                              <option value="Standard Chartered Bank Plc">Standard Chartered Bank Plc</option>
+                              <option value="Sterling Bank Plc">Sterling Bank Plc</option>
+                              <option value="Union Bank of Nigeria Plc">Union Bank of Nigeria Plc</option>
+                              <option value="United Bank for Africa Plc">United Bank for Africa Plc</option>
+                              <option value="Unity Bank Plc">Unity Bank Plc</option>
+                              <option value="Wema Bank Plc">Wema Bank Plc</option>
+                              <option value="Zenith Bank Plc">Zenith Bank Plc</option>
+                            </select>
+                          </div> 
+                      </div>
+             
+                      <div id="Tether" class="tabcontent">
+                        <h3>Tether</h3>
+                       <p id="market-rate4"></p>
+                       <p class="para-2">@ &#8358;500/USD Value</p>
+                        <p class="para-3">Please enter the amount you want in USDT in the space for usdt OR the amount you want in USD in the space for usd OR the amount you want in Naira in the space for naira only. Other values will be calculated by the system based on the amount you want either in USDT, USD or Naira.</p>
+                        <div class="input-flex">
+                            <div>
+                               <input type="text" placeholder="Amount in USDT" value="" class="form-control">
+                               <input type="text" placeholder="Amount in USD" value="" class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                           <input type="text" placeholder="Naira Value" value="" class="form-control">
+                        </div>
+                        <div>
+                           <input type="text" placeholder="Your USDT Address" value="" class="form-controls">
+                        </div>
+                        <div>
+                           <input type="text" placeholder="Your USDT Address AGAIN" value="" class="form-controls">
+                        </div>
+                        <div>
+                           <select id="banks" name="banks" class="form-control">
+                             <option value="">Choose a bank</option>
+                             <option value="Access Bank Nig. Plc">Access Bank Nig. Plc</option>
+                             <option value="Ecobank Nigeria Plc">Ecobank Nigeria Plc</option>
+                             <option value="FCMB Plc">FCMB Plc</option>
+                             <option value="Fidelity Bank Plc">Fidelity Bank Plc</option>
+                             <option value="First Bank of Nigeria Plc">First Bank of Nigeria Plc</option>
+                             <option value="GTB Plc">GTB Plc</option>
+                             <option value="Heritage Banking Company Ltd.">Heritage Banking Company Ltd.</option>
+                             <option value="KeyStone Bank Plc">KeyStone Bank Plc</option>
+                             <option value="Polaris Bank Ltd.">Polaris Bank Ltd.</option>
+                             <option value="Providus Bank Ltd.">Providus Bank Ltd.</option>
+                             <option value="Stanbic - IBTC Bank Plc">Stanbic - IBTC Bank Plc</option>
+                             <option value="Standard Chartered Bank Plc">Standard Chartered Bank Plc</option>
+                             <option value="Sterling Bank Plc">Sterling Bank Plc</option>
+                             <option value="Union Bank of Nigeria Plc">Union Bank of Nigeria Plc</option>
+                             <option value="United Bank for Africa Plc">United Bank for Africa Plc</option>
+                             <option value="Unity Bank Plc">Unity Bank Plc</option>
+                             <option value="Wema Bank Plc">Wema Bank Plc</option>
+                             <option value="Zenith Bank Plc">Zenith Bank Plc</option>
+                           </select>
+                         </div> 
+                     </div>
+                   </div>
+                   <a href="authenticate-buy.html"><button class="btn2" type="button">Buy</button></a>
+                </div>
+             </section>
+        </div>
+      </div>
+    <script src="../js/buy-sell.js"></script>
+</body>
+</html>

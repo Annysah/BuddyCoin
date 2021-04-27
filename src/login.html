@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <p>BuddyCoin</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="buy.html">Buy</a>
+                <a href="sell.html">Sell</a>
+                <a href="contact.html">Get In Touch</a>
+            </div>
+            <div class="reg">
+                <a class="reg-link" href="login.html" target="_blank"><button class="reg-btn">Log In</button></a>
+            </div>
+        </div>
+
+
+        <div class="card-containers">
+            <div class="header-wrapper">
+                <img src="../images/undraw_Access_account_re_8spm.svg" alt="">
+                <h2>Log in</h2>
+            </div>
+            <form action="" id="form">
+                <div class="other1">
+                    <div>
+                        <label for="email" class="other-label">Email <span class="star">*</span></label>
+                        <br> 
+                        <input type="email" name="email" id="email" class="form-controller" placeholder="johndoe@email.com" data-rule="required|email">
+                    </div>
+                    <br>
+                    <div id="errors"></div>
+                    <br>
+                    <div>
+                        <label for="password" class="other-label">Password <span class="star">*</span></label>
+                        <br> 
+                        <input type="password" name="password" id="password" class="form-controller" placeholder="Enter password" data-rule="required|email">
+                    </div>
+                </div>
+                <button class="btn" type="submit">Log in</button>
+            </form>
+            <div class="details">
+                <p><a href="signup.html">Sign up?</a></p>
+                <a class="forgot" href="forgot.html">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&#169;2020 Coinaskglobal. All rights reserved.</p>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>
